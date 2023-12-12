@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# HackerNews React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that replicates the functionality of HackerNews. It allows users to browse HackerNews stories, perform searches, view post details, and features infinite loading for search results.
 
-## Available Scripts
+![HackerNews Logo](src/assets/logo.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Infinite Loading**: Search results are loaded in batches, enabling continuous scrolling to view more results.
+- **Search Functionality**: Users can search for stories and view the results.
+- **Post Details**: Clicking on a specific post displays its details, such as comments and related information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- React Router DOM
+- Axios for HTTP requests
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the project locally:
 
-### `npm run build`
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Start the development server with `npm start`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Visit the homepage to view the latest HackerNews stories.
+- Use the search bar to search for specific topics or stories.
+- Click on a story to view its details.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+The app is deployed on Netlify and can be accessed [here](https://hacker-news-zwe8.onrender.com/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/components/home`: Contains components related to the homepage and story listings.
+- `src/components/post`: Contains components related to displaying post details.
+- `src/reduxstore`: Redux store setup and actions for managing app state.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! Fork the repository and create a pull request with your changes.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
