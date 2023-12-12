@@ -38,14 +38,13 @@ const Home = () => {
     dispatch(clearSearchResults());
   };
 
-  const handleLoadMore = async () => {
-    setIsLoading(true);
-    await dispatch(fetchMoreSearchResultsAction(query, page + 1));
-    setPage(page + 1);
-    setIsLoading(false);
-  };
-
   useEffect(() => {
+    const handleLoadMore = async () => {
+      setIsLoading(true);
+      await dispatch(fetchMoreSearchResultsAction(query, page + 1));
+      setPage(page + 1);
+      setIsLoading(false);
+    };
     const handleScroll = () => {
       const { scrollTop, clientHeight, scrollHeight } =
         document.documentElement;
@@ -56,7 +55,7 @@ const Home = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleLoadMore, isLoading]);
+  }, [isLoading, page, query, dispatch]);
 
   return (
     <Box sx={{ height: "100vh" }}>
