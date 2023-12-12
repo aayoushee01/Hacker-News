@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.searchBar {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchIcon {
+  cursor: pointer;
+  color: #E56E21;
+}
